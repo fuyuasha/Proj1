@@ -1,3 +1,4 @@
+//$c12  JGM 09/07/10 Removed isAvailable().
 //$c11
 //$c10	JGM 05/22/06 Fixed some formatting typos %ls -> %s
 //$c9	JGM 03/11/09 Proj 13644: fixed flxActCommonHandleGetError(), iConvErr().
@@ -39,19 +40,6 @@ swSecFLEXnet_c::swSecFLEXnet_c(swSecEventLog_c *eventLog) :
 
 swSecFLEXnet_c::~swSecFLEXnet_c()
 {
-}
-
-/////////////////////////////////////////////////////////////////////////////
-
-BOOL swSecFLEXnet_c::isAvailable()
-{
-	BOOL bRet = FALSE;
-
-#ifdef SWSEC_FLEXNET_DEFINED
-	bRet = TRUE;
-#endif
-
-	return bRet;
 }
 
 /////////////////////////////////////////////////////////////////////////////
